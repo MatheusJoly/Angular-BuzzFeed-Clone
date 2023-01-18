@@ -1,0 +1,19 @@
+<div class="card-content">
+    <div class="card-content__ask" *ngIf=!finished>
+        <div class="card-content__title">
+        <h3>{{questionSelected.question}}</h3>
+    </div>
+    </div>
+    <div class="card-content__options" *ngIf=!finished>
+        <button *ngFor="let a of questionSelected.options; let i = index"
+        (click)="playerChoice(a.alias)">
+            {{a.name}}
+        </button>
+
+
+    </div>
+    <div  *ngIf=finished class="results">
+        <h1>O seu resultado é:</h1>
+        <p>{{FinalResult}}</p>
+    </div>
+</div>

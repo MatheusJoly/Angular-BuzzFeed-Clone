@@ -1,0 +1,12 @@
+.card-title{
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+.card-title > h1{
+    font-size: 100px;
+    margin-bottom: 1px;
+}
+.card-title > h3{
+    font-size: 30px;
+}
